@@ -27,5 +27,5 @@ void draw()
   float diameter = map(rms.analyze(), 0.0, 1.0, 0.0,width);
 
     tint(diameter);
-    image(img, width/4-diameter, height/4-diameter, 320+(diameter*2), 320+(diameter*2));
+    image(img, width / 4 - diameter, height / 4 - diameter, 320 + (diameter * 2), 320 + (diameter * 2));
 }
