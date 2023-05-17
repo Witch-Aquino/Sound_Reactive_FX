@@ -2,7 +2,7 @@
 
 Sound Reactive FX's for VJing
 
-Written for Processing
+Written for "Processing"
 https://processing.org/
 
 You must put the logo.png file in the same directory
