@@ -7,7 +7,7 @@ PImage img;
 
 void setup()
 {
-  size(640, 480);
+  size(640, 480, P2D);
 
   minim = new Minim(this);
   in = minim.getLineIn(Minim.MONO, 640);
