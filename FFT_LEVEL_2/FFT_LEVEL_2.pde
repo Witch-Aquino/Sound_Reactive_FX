@@ -11,7 +11,7 @@ PImage img;
 
 void setup()
 {
-  size(640, 480);
+  size(640, 480, P2D);
   noStroke();
   
   in = new AudioIn(this, 0);

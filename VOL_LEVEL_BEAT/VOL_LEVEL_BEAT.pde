@@ -4,7 +4,7 @@ AudioIn in;
 BeatDetector beatDetector;
 
 void setup() {
-  size(640, 480);
+  size(640, 480, P2D);
   background(255);
 
   in = new AudioIn(this, 0);
