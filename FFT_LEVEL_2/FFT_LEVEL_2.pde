@@ -9,10 +9,9 @@ float scale = 20.0;
 
 PImage img;
 
-
 void setup()
 {
-  size(640, 480);
+  size(640, 480, P2D);
   noStroke();
   
   in = new AudioIn(this, 0);
@@ -39,7 +38,7 @@ void draw()
   }
 
   tint(0, 0, 0);
-  image(img, width/4, height/4, 320, 320);
+  image(img, width / 4, height / 4, 320, 320);
  
   fft.analyze();
   float w = width/float(bands);
@@ -47,8 +46,8 @@ void draw()
   beginShape();
   for (int i = 0; i < bands; i++) {
     stroke(255);
-    vertex(i * width/float(bands), height/2 - fft.spectrum[i] * height * scale); 
-    vertex(i * width/float(bands), height/2 - fft.spectrum[i] * height * scale * -1); 
+    vertex(i * width / float(bands), height / 2 - fft.spectrum[i] * height * scale); 
+    vertex(i * width / float(bands), height / 2 - fft.spectrum[i] * height * scale * -1); 
   }
   endShape();
 

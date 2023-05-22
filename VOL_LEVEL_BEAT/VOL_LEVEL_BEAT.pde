@@ -4,20 +4,17 @@ AudioIn in;
 BeatDetector beatDetector;
 
 void setup() {
-  size(640, 480);
+  size(640, 480, P2D);
   background(255);
 
   in = new AudioIn(this, 0);
   in.start();
   
   beatDetector = new BeatDetector(this);
-  beatDetector.input(in);
-  
-  // The sensitivity determines how long the detector will wait after detecting
-  // a beat to detect the next one.
+  beatDetector.input(in);  
   beatDetector.sensitivity(192);
   
-  img = loadImage("logo.png");'
+  img = loadImage("logo.png");
   
   frameRate(30);
 }
@@ -25,10 +22,8 @@ void setup() {
 void draw() {
   background(0);
 
-  // Draw debug graph in the background
   drawDebug();
 
-  // If a beat is currently detected, light up the indicator
   if (beatDetector.isBeat()) {
     fill(255);
   } else {

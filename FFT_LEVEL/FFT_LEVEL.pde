@@ -9,7 +9,7 @@ PImage img;
 
 void setup()
 {
-  size(640, 480, P3D);
+  size(640, 480, P2D);
   noStroke();
   
   in = new AudioIn(this, 0);
@@ -28,7 +28,7 @@ void draw()
   background(0);
   
   fft.analyze();
-  float w = width/float(bands)/2.0;
+  float w = width / float(bands) / 2.0;
 
   for (int i = 0; i < bands; i++){
     fill(fft.spectrum[i] * scale + 10);
@@ -36,7 +36,7 @@ void draw()
     rect(width - i * w, 0, w, height);
 
     tint(fft.spectrum[i] * scale * 20);
-    image(img, width/4, height/4, 320, 320);
+    image(img, width / 4, height / 4, 320, 320);
 
   }
 }
