@@ -4,7 +4,7 @@ AudioIn in;
 Amplitude rms;
 FFT fft;
 
-int bands = 256;
+int bands = 512;
 float scale = 20.0;
 
 PImage img;
