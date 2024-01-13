@@ -20,7 +20,7 @@ void setup()
 
   img = loadImage("logo.png");
 
-  frameRate(30);
+  frameRate(60);
 }
 
 void draw()
