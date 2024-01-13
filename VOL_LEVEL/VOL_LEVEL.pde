@@ -7,7 +7,7 @@ PImage img;
 
 void setup()
 {
-  size(640, 480, P2D);
+  size(640, 480, OPENGL);
 
   minim = new Minim(this);
   in = minim.getLineIn(Minim.MONO, 640);
@@ -21,7 +21,6 @@ void draw()
 {
   background(0);
   
-  // draw the waveforms so we can see what we are monitoring
   for(int i = 0; i < in.bufferSize() - 1; i++)
   {
     stroke(255);
@@ -34,7 +33,13 @@ void draw()
       tint(255);
       image(img, width / 4, height / 4, 320, 320);
     }
- 
   }
+  minim = new Minim(this);
+  
+}
 
+void stop() {
+  in.close();
+  minim.stop();
+  super.stop();
 }
