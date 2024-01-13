@@ -9,6 +9,7 @@ int count = 0;
 
 void setup(){
   size(640, 480, OPENGL);
+
   fill(204);
   strokeWeight(2);
     
