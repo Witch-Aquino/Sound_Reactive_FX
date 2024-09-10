@@ -1,4 +1,8 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
+
 
 AudioIn in;
 Amplitude rms;
@@ -9,7 +13,6 @@ int count = 0;
 
 void setup(){
   size(640, 480, OPENGL);
-
   fill(204);
   strokeWeight(2);
     
@@ -19,6 +22,9 @@ void setup(){
   rms.input(in);
 
   img = loadImage("logo.png");
+  
+  spout = new Spout(this);
+  spout.createSender("VOL_CLOCKWISE_SPOUT");
   
   frameRate(60);
   
@@ -42,6 +48,8 @@ void draw(){
     image(img, -width / 4 -diameter / 2, -height / 4 -diameter / 2, 320 + diameter, 320 + diameter);
   } else {
     count = 0;
-}
+  }
+  
+  spout.sendTexture();
  
 }

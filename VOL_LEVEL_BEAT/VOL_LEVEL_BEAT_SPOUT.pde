@@ -1,4 +1,9 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
+
+
 PImage img;
 AudioIn in;
 BeatDetector beatDetector;
@@ -15,7 +20,10 @@ void setup() {
   beatDetector.sensitivity(192);
   
   img = loadImage("logo.png");
-  
+
+  spout = new Spout(this);
+  spout.createSender("VOL_LEVEL_BEAT_SPOUT");
+
   frameRate(60);
 }
 
@@ -29,6 +37,8 @@ void draw() {
   } else {
     fill(0);
   }
+
+  spout.sendTexture();
 
 }
 

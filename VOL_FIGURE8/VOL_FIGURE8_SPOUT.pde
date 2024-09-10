@@ -1,4 +1,7 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
 
 AudioIn in;
 Amplitude rms;
@@ -9,7 +12,6 @@ int count = 0;
 
 void setup(){
   size(640, 480, OPENGL);
-
   fill(204);
   strokeWeight(2);
     
@@ -19,6 +21,9 @@ void setup(){
   rms.input(in);
 
   img = loadImage("logo.png");
+
+  spout = new Spout(this);
+  spout.createSender("VOL_FIGURE8_SPOUT");
   
   frameRate(60);
   
@@ -42,5 +47,5 @@ void draw(){
   } else {
     count = 0;
   }
- 
+  spout.sendTexture(); 
 }

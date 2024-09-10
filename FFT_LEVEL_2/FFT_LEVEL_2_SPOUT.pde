@@ -1,10 +1,13 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
 
 AudioIn in;
 Amplitude rms;
 FFT fft;
 
-int bands = 512;
+int bands = 256;
 float scale = 20.0;
 
 PImage img;
@@ -23,6 +26,9 @@ void setup()
   
   img = loadImage("logo.png");
 
+  spout = new Spout(this);
+  spout.createSender("FFT_LEVEL_2_SPOUT");
+ 
   frameRate(60);
 }
 
@@ -50,5 +56,7 @@ void draw()
     vertex(i * width / float(bands), height / 2 - fft.spectrum[i] * height * scale * -1); 
   }
   endShape();
+  
+  spout.sendTexture();
 
 }

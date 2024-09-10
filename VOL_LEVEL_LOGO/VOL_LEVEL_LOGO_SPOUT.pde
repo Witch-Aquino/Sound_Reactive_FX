@@ -1,4 +1,7 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
 
 AudioIn in;
 Amplitude rms;
@@ -16,6 +19,9 @@ void setup()
   rms.input(in);
 
   img = loadImage("logo.png");
+
+  spout = new Spout(this);
+  spout.createSender("VOL_LEVEL_LOGO_SPOUT");
   
   frameRate(60);
 }
@@ -26,6 +32,8 @@ void draw()
   
   float diameter = map(rms.analyze(), 0.0, 1.0, 0.0,width);
 
-    tint(diameter);
-    image(img, width / 4 - diameter, height / 4 - diameter, 320 + (diameter * 2), 320 + (diameter * 2));
+  tint(diameter);
+  image(img, width / 4 - diameter, height / 4 - diameter, 320 + (diameter * 2), 320 + (diameter * 2));
+    
+  spout.sendTexture();
 }
