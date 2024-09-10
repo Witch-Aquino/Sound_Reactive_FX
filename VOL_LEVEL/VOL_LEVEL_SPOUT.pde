@@ -1,4 +1,7 @@
 import ddf.minim.*;
+import spout.*;
+
+Spout spout;
 
 Minim minim;
 AudioInput in;
@@ -13,6 +16,9 @@ void setup()
   in = minim.getLineIn(Minim.MONO, 640);
   
   img = loadImage("logo.png");
+
+  spout = new Spout(this);
+  spout.createSender("VOL_LEVEL_SPOUT");
   
   frameRate(60);
 }
@@ -35,7 +41,7 @@ void draw()
     }
   }
   minim = new Minim(this);
-  
+  spout.sendTexture();
 }
 
 void stop() {

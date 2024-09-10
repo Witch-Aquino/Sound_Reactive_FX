@@ -1,4 +1,7 @@
 import processing.sound.*;
+import spout.*;
+
+Spout spout;
 
 AudioIn in;
 Amplitude rms;
@@ -19,6 +22,9 @@ void setup()
   in.start();
   rms = new Amplitude(this);
   rms.input(in);
+
+  spout = new Spout(this);
+  spout.createSender("VOL_LEVEL_SHAPES_SPOUT");
   
   frameRate(60);
   background(0);
@@ -66,4 +72,5 @@ void draw()
             stroke(255, 255, d/3);  
             triangle(random_w, random_h - d, random_w - d, random_h + d / 1.5, random_w + d, random_h + d / 1.5);
           }
+    spout.sendTexture();
 }
