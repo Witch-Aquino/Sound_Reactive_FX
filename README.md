@@ -1,11 +1,7 @@
-
-![SRFX_Pic](https://github.com/user-attachments/assets/10e08700-2ad5-40ed-8d2d-fc62a928d06d)
+![SRFX_120pix](https://github.com/user-attachments/assets/ca5e7b53-d3e6-44ef-88f7-e51dc4a186d0)
 # Sound_Reactive_FX
 
-Sound Reactive FX's for VJing
-
-Written by "Processing"
-https://processing.org/
+Sound Reactive FX's for BGV & VJing
 
 You must put the "logo.png" file in the same directory
 
