@@ -3,7 +3,7 @@
 
 Sound Reactive FX's for BGV & VJing
 
-OS/アプリの起動前にマイクを接続してください  
+<mark>OS/アプリの起動前にマイクを接続してください</mark>  
 
 - Processing環境の準備  
 	https://processing.org/  
