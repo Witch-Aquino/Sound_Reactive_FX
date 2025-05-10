@@ -3,4 +3,23 @@
 
 Sound Reactive FX's for BGV & VJing
 
-You must put the "logo.png" file in the same directory
+OS/アプリの起動前にマイクを接続してください  
+
+- Processing環境の準備  
+	https://processing.org/  
+	使用環境に応じてダウンロードをしてください。  
+	ダウンロード完了後、インストールしてください  
+
+- ソースコードの入手  
+	https://github.com/Witch-Aquino/Sound_Reactive_FX/releases/tag/1.0  
+	からSource code(ZIP)をダウンロードします。  
+	ダウンロード完了後、適宜展開～コンパイルを行ってください  
+	※エフェクト(pdeファイル)毎にコンパイルが必要です。  
+
+- ロゴの作成  
+	logo.png というファイルネームでロゴを作成してください  
+	推奨するサイズは640*640です  
+
+
+- 動作確認  
+	マイク入力に応じてロゴのサイズなどが変化することを確認してください  
