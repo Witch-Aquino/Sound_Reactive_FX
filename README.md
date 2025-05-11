@@ -1,7 +1,7 @@
 ![SRFX_120pix](https://github.com/user-attachments/assets/ca5e7b53-d3e6-44ef-88f7-e51dc4a186d0) 
 # Sound_Reactive_FX
 
-Sound Reactive FX's for BGV & VJing
+### Sound Reactive FX's for BGV & VJing
 
 <mark>OS/アプリの起動前にマイクを接続してください</mark>  
 
@@ -24,7 +24,7 @@ Sound Reactive FX's for BGV & VJing
 - 動作確認  
 	マイク入力に応じてロゴのサイズなどが変化することを確認してください
 
-使用例(OBS studio, Cantabile, VSを併用した構成)  
+## 使用例(OBS studio, Cantabile, VSを併用した構成)  
 
 
   
