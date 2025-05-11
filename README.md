@@ -38,7 +38,7 @@ Sound Reactive FX's for BGV & VJing
 	obs-spout2-pluginを導入してください。  
 	https://github.com/Off-World-Live/obs-spout2-plugin
 
-- Cantabile(ホットキーを使用するのにsoloライセンス以上が必要)
+- Cantabile(ホットキーを使用するのにsoloライセンス以上が必要)  
 	https://www.cantabilesoftware.com/  
 	VSTホストに Cantabile を使用します。使用するVSTプラグインは下記を推奨  
 	- sonible pureLimit(レベル調整)  
