@@ -28,4 +28,22 @@ Sound Reactive FX's for BGV & VJing
 
 
   
-![image](https://github.com/user-attachments/assets/a09cfb6f-89b6-4110-8303-045437678415)
+![image](https://github.com/user-attachments/assets/a09cfb6f-89b6-4110-8303-045437678415)  
+
+- OBS Studio    
+	ダウンロード～インストールを行い    
+	適宜設定を行ってください  
+	SPOUTで映像を転送しますので    
+	obs-spout2-pluginを導入してください。     
+  
+- Cantabile(ホットキーを使用するのにsoloライセンス以上が必要)  
+	VSTホストに Cantabile を使用します。使用するVSTプラグインは下記を推奨  
+	- sonible pureLimit(レベル調整)  
+	- SSL X-Gate(ビート検出調整)  
+	- VS(Visual Synthesizer) 無くてもよいが派手な動く背景が作りやすい  
+ 
+
+- プログラマブルキーボード  
+	足などで操作する場合は用意してください  
+	
+
