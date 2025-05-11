@@ -22,4 +22,8 @@ Sound Reactive FX's for BGV & VJing
 
 
 - 動作確認  
-	マイク入力に応じてロゴのサイズなどが変化することを確認してください  
+	マイク入力に応じてロゴのサイズなどが変化することを確認してください
+
+
+使用例  
+![image](https://github.com/user-attachments/assets/a09cfb6f-89b6-4110-8303-045437678415)
