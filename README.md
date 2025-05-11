@@ -7,8 +7,7 @@ Sound Reactive FX's for BGV & VJing
 
 - Processing環境の準備  
 	https://processing.org/  
-	使用環境に応じてダウンロードをしてください。  
-	ダウンロード完了後、インストールしてください  
+	使用環境に応じてダウンロード～インストールを行ってください。 
 
 - ソースコードの入手  
 	https://github.com/Witch-Aquino/Sound_Reactive_FX/releases/tag/1.0  
