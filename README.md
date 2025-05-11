@@ -13,6 +13,7 @@ Sound Reactive FX's for BGV & VJing
 	https://github.com/Witch-Aquino/Sound_Reactive_FX/releases  
 	からSource code(ZIP)をダウンロードします。  
 	ダウンロード完了後に適宜、展開～コンパイルを行ってください  
+	 (ファイル＞アプリケーションとしてエクスポート)  
 	※エフェクト(pdeファイル)毎にコンパイルが必要です。  
 
 - ロゴの作成  
